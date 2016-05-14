@@ -1,4 +1,6 @@
 # Mantis Ruby
+
+[![Join the chat at https://gitter.im/DimoMohit/mantis_ruby](https://badges.gitter.im/DimoMohit/mantis_ruby.svg)](https://gitter.im/DimoMohit/mantis_ruby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A gem to pull and push bugs into mantis.
 
 # How to install
