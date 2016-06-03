@@ -4,8 +4,13 @@ A gem to pull and push bugs into mantis.
 [![Gem Version](https://badge.fury.io/rb/mantis_ruby.png)](https://badge.fury.io/rb/mantis_ruby)
 
 ### How to install
+Ruby
 ```ruby
 gem install mantis_ruby
+```
+In Gemfile of Rails
+```ruby
+gem 'mantis_ruby', '~> 0.1.2
 ```
 
 ### Test in irb
