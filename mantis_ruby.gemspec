@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'mantis_ruby'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2015-06-07'
   s.summary     = "Mantis Testing tool with Ruby"
   s.description = "Gem to integrate Mantis Testing tool with Ruby apps"
