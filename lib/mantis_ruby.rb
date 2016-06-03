@@ -27,12 +27,7 @@ class MantisRuby
   end
   def self.hi
     "Hello developer! Welcome to Mantis Ruby Gem."+
-    "You can use MantisRuby.help any time to get the help."
-    
-  end
-
-  def self.help
-    
+    "You can use visit https://github.com/DimoMohit/mantis_ruby any time to get the help."
   end
 
   def initialize(username,password,wsdl)
