@@ -31,7 +31,7 @@ MantisRuby.issue_in_format({})
 
 Example:
 ```ruby
-> MantisRuby.issue_in_format
+> bug=MantisRuby.issue_in_format
  => {:id=>1, :status=>"new", :summary=>"First issue", :actual=>"Actual result", :expected=>"Expected Result", :screenresolution=>"Give if possible", :description=>"Description \r\n ---------------- \r\n Actual Result: \r\n Your actual desult will be shown here. \r\n ---------------- \r\n Expected Result:\r\n Expected Result will be shown here \r\n ---------------- \r\n Screen Resolution:\r\n Screen resolution will come here.", :steps_to_reproduce=>"Step to reproduce", :additional_information=>"additional_information", :category=>"General", :add_note=>"bug note", :resolution=>"screenresolution", :severity=>"10", :reproducibility=>"Reproducibility", :priority=>"10", :file_location=>"http://dimomohit.com/assets/logo-a40f75aaa7c1d5a2a3f99e8da5e8159c353e407ffdc1c29dfabe43e4c7e8bd41.png", :content_type=>"png", :project=>{:id=>"project_id", :name=>"project_name"}}
 
 ```
@@ -39,7 +39,7 @@ You can edit any of the value and generate a custom issue in the format
 
 Example:
 ```ruby
-> MantisRuby.issue_in_format({:file_location=>"http://rubyonrails.org/images/rails-logo.svg", :content_type=>"svg"})
+> bug=MantisRuby.issue_in_format({:file_location=>"http://rubyonrails.org/images/rails-logo.svg", :content_type=>"svg"})
 => {:id=>1, :status=>"new", :summary=>"First issue", :actual=>"Actual result", :expected=>"Expected Result", :screenresolution=>"Give if possible", :description=>"Description \r\n ---------------- \r\n Actual Result: \r\n Your actual desult will be shown here. \r\n ---------------- \r\n Expected Result:\r\n Expected Result will be shown here \r\n ---------------- \r\n Screen Resolution:\r\n Screen resolution will come here.", :steps_to_reproduce=>"Step to reproduce", :additional_information=>"additional_information", :category=>"General", :add_note=>"bug note", :resolution=>"screenresolution", :severity=>"10", :reproducibility=>"Reproducibility", :priority=>"10", :file_location=>"http://rubyonrails.org/images/rails-logo.svg", :content_type=>"svg", :project=>{:id=>"project_id", :name=>"project_name"}}
 ```
 
@@ -66,10 +66,14 @@ mantis_ruby.projects_get_user_accessible
 ```
 
 ##### push_all_bugs(bugs)
+```ruby
 mantis_ruby.push_all_bugs(array_of_bugs)
+```
 
 ##### Push issue to Mantis
+```ruby
 mantis_ruby.push_bug(bug,project_id,project_name)
+```
 
 Example:
 ```ruby
@@ -79,8 +83,16 @@ Example:
 
 It returns the id of issue created
 
+Note : Here bug is a hash which has keys matching Mantis Bugtracking Tool. You can create that has or simply you can molde the MantisRuby.issue_in_format as per your requirement.
+
+```ruby
+bug=MantisRuby.issue_in_format({:summary=>"New issue summary",:severity => "20",:priority => "30"})
+```
+
 ##### Update an issue
+```ruby
 mantis_ruby.update_bug(bug,project_id,project_name)
+```
 
 ##### Upload attachment for an issue
 Use following function to upload attachment
@@ -99,12 +111,18 @@ Example:
 ```
 
 ##### Ser Note for an issue
+```ruby
 mantis_ruby.set_note(bug)
+```
 
 ##### Set tag for an issue
+```ruby
 mantis_ruby.set_tag(bug)
+```
 
 ##### Set Priority of an issue
+```ruby
 mantis_ruby.set_priority(bug)
+```
 
 
