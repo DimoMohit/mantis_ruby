@@ -26,8 +26,9 @@ class MantisRuby
         }).merge(issue)
   end
   def self.hi
-    puts "Hello developer! Welcome to Mantis Ruby Gem."
-    puts "You can use MantisRuby.help any time to get the help."
+    "Hello developer! Welcome to Mantis Ruby Gem."+
+    "You can use MantisRuby.help any time to get the help."
+    
   end
 
   def self.help
@@ -42,7 +43,7 @@ class MantisRuby
   end
 
   def connect_to_tracker
-    @client = Savon.client(wsdl: "#{@wsdl}/api/soap/mantisconnect.php?wsdl" ) 
+    Savon.client(wsdl: "#{@wsdl}/api/soap/mantisconnect.php?wsdl" ) 
   end
 
   def check_version
@@ -58,7 +59,6 @@ class MantisRuby
   end
 
   def push_all_bugs(bugs)
-    client=connect_to_tracker
     bugs.each do |bug|
       push_bug(bug)
       begin

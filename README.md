@@ -30,7 +30,7 @@ You can edit any of the value and generate a custom issue in the format
 
 Example:
 ```ruby
-> MantisRuby.issue_format({:file_location=>"http://rubyonrails.org/images/rails-logo.svg", :content_type=>"svg"})
+> MantisRuby.issue_in_format({:file_location=>"http://rubyonrails.org/images/rails-logo.svg", :content_type=>"svg"})
 => {:id=>1, :status=>"new", :summary=>"First issue", :actual=>"Actual result", :expected=>"Expected Result", :screenresolution=>"Give if possible", :description=>"Description \r\n ---------------- \r\n Actual Result: \r\n Your actual desult will be shown here. \r\n ---------------- \r\n Expected Result:\r\n Expected Result will be shown here \r\n ---------------- \r\n Screen Resolution:\r\n Screen resolution will come here.", :steps_to_reproduce=>"Step to reproduce", :additional_information=>"additional_information", :category=>"General", :add_note=>"bug note", :resolution=>"screenresolution", :severity=>"10", :reproducibility=>"Reproducibility", :priority=>"10", :file_location=>"http://rubyonrails.org/images/rails-logo.svg", :content_type=>"svg", :project=>{:id=>"project_id", :name=>"project_name"}}
 ```
 
