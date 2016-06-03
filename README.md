@@ -1,8 +1,12 @@
 ### Mantis Ruby
 A gem to pull and push bugs into mantis.
 
+[![Gem Version](https://badge.fury.io/rb/mantis_ruby.png)](https://badge.fury.io/rb/mantis_ruby)
+
 ### How to install
+```ruby
 gem install mantis_ruby
+```
 
 ### Test in irb
 ```ruby
@@ -97,4 +101,5 @@ mantis_ruby.set_tag(bug)
 
 ##### Set Priority of an issue
 mantis_ruby.set_priority(bug)
+
 
