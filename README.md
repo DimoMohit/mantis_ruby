@@ -83,7 +83,7 @@ Example:
 
 It returns the id of issue created
 
-Note : Here bug is a hash which has keys matching Mantis Bugtracking Tool. You can create that has or simply you can molde the MantisRuby.issue_in_format as per your requirement.
+Note : Here bug is a hash which has keys matching Mantis Bugtracking Tool. You can create that has or simply you can mould the MantisRuby.issue_in_format as per your requirement.
 
 ```ruby
 bug=MantisRuby.issue_in_format({:summary=>"New issue summary",:severity => "20",:priority => "30"})
