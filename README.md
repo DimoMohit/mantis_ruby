@@ -20,7 +20,7 @@ gem 'mantis_ruby', '~> 0.1.2
 => true
 >> MantisRuby.hi
 Hello developer! Welcome to Mantis Ruby Gem.
-You can use MantisRuby.help any time to get the help.
+You can use visit https://github.com/DimoMohit/mantis_ruby any time to get the help.
 ```
 
 ### Issue Format
