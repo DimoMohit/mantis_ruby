@@ -10,4 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    =
     'https://github.com/DimoMohit/mantis_ruby'
   s.license       = 'MIT'
+  s.add_dependency("ruby", ">= 1.9")
+  s.add_dependency("savon")
+  s.add_dependency("httpclient")
 end
